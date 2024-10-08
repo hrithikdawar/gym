@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+
+form{
+   
+   background-color: #fff8f8;
+    padding: 40px 50px ;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
+}
+form>h2{
+    color:rgb(61, 58, 58);
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: .2vw;
+    
+}
+form>.input{
+    width: 300px;
+    margin-top: 8vh;
+    position: relative;
+}
+form>.input>input{
+    position: relative;
+    width: 100%;
+    padding: 20px 10px 10px ;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    font-size: 3vh;
+    color: rgb(41, 43, 43);
+    z-index: 12;
+    transition: .8s ;
+
+}
+form>.input>span{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 20px 10px 10px ;
+    transition: .8s ;
+    font-size: 3vh;
+    color: #4d3b2f;
+    pointer-events: none;
+}
+
+
+ form .input input:valid ~ span,
+ form .input input:focus ~ span{
+    color: rgb(129, 96, 52);
+    font-size: 2vh;
+    transform: translateY(-34px);
+
+}
+form .input>i{
+    position: absolute;
+    height: 2px;
+    background-color: rgb(243, 222, 184);
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    transition: 0.6s;
+    overflow: hidden;
+    pointer-events: none;
+
+
+
+}
+ form .input input:valid ~ i,
+ form .input input:focus ~ i{
+    height: 7vh;
+
+}
+
+
+
+form>button{
+    padding: 2vh 7vw;
+    border-radius: 25px 0 25px 0 ;
+}
+form>button:hover{
+    border-radius: 0 25px 0   25px;
+background: linear-gradient(0deg, rgb(209, 69, 99),rgb(212, 62, 62),rgb(248, 23, 42));
+    transition: all 1s;
+}
+
+
